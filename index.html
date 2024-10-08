@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./libray/css/font-awesome.min.css">
     <link rel="stylesheet" href="./libray/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 
             <h1 class="w-[243px] text-[24px] font-bold mt-[96px] h-[52px]">Influencer products</h1>
             <nav>
-                <ul class="flex justify-center gap-[34px] mt-[96px]">
+                <ul class="md:flex justify-center hidden gap-[34px] mt-[96px]">
                     <li><a href="#" class=" w-[50px] font-semibold text-[20px] ">Home</a></li>
                     <li><a href="#" class="w-[74px] font-semibold text-[20px] ">Products</a></li>
                     <li><a href="#" class="w-[62px] font-semibold text-[20px] ">Sing up</a></li>
@@ -28,6 +30,29 @@
                 </ul>
 
             </nav>
+
+
+            <div class="drawer md:hidden">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
+                </div>
+                <div class="drawer-side">
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                        <!-- Sidebar content here -->
+                        <li><a href="#" class=" w-[50px] font-semibold text-[20px] ">Home</a></li>
+                        <li><a href="#" class="w-[74px] font-semibold text-[20px] ">Products</a></li>
+                        <li><a href="#" class="w-[62px] font-semibold text-[20px] ">Sing up</a></li>
+                        <li><a href="#" class="w-[48px] font-semibold text-[20px] ">Log in</a></li>
+                        <li><a href="#"><img src="./akar-icons_search.svg" class="w-[24px] h-[24px] mt-[10px]
+                                                " alt="...."></a></li>
+                        <li><a href="#"><img src="./clarity_shopping-cart-outline-badged.svg" class="w-[36px]
+                                                h-[36px]" alt="..."></a></li>
+                    </ul>
+                </div>
+            </div>
 
         </header>
         <!-- hero area -->
@@ -48,12 +73,15 @@
                                 Preebook now
 
                             </button></div>
-                        <div class="mt-[42px] text-[#ffff] ml-[-45px] w-[24px] h-[24px]"><img src="./arrow-forward 1.svg" alt="...">
+                        <div class="mt-[42px] text-[#ffff] ml-[-45px] w-[24px] h-[24px]"><img
+                                src="./arrow-forward 1.svg" alt="...">
                         </div>
                     </div>
                 </div>
-                <div><img src="unsplash_InK0X-GDjrQ.png" class="md:w-[440px] md:h-[414px] drop-shadow-md 
-                    mt-[221px]" alt="..."></div>
+                <div class="bg-[url(/image/rounded.png)] bg-no-repeat bg-cover bg-bottom mt-[200px]
+                 p-10 md:w-[475px] md:h-[475px]"><img src="unsplash_InK0X-GDjrQ.png" class="md:w-[440px] 
+                 md:h-[414px] drop-shadow-md 
+                    mt-[-10px]" alt="..."></div>
             </div>
         </section>
         <!-- 2ndsection -->
@@ -67,9 +95,10 @@
             <div><img src="./Group 33127.png" class="md:w-[91px] h-[38px]" alt="..."></div>
         </section>
         <!-- 3thsection -->
-        <section class="h-[1662px] ">
+        <section class="md:h-[1662px] ">
             <h1 class="w-[262px] text-[28px] text-[#3A3A3A] flex mx-[auto] mt-[100px]">Popular Collection</h1>
-            <div class=" grid-cols-3 flex justify-center gap-[30px] mt-[30px] md:grid-cols-1">
+            <div class=" md:grid-cols-3 flex justify-center gap-[30px] mt-[30px] grid-cols-1
+             flex-wrap md:flex-nowrap">
                 <div class="bg-[pink] w-[329px] h-[480px]">
                     <img src="./unsplash_-c1-ZT-hLzM.png" class="w-[300px] h-[256px] mt-[16px] ml-[15px] " alt="...">
                     <h1 class="w-[109px] text-[28px] mt-[16px] ml-[15px]">Airbuds</h1>
@@ -110,7 +139,7 @@
 
 
             </div>
-            <div class=" grid-cols-3 flex justify-center gap-[30px] mt-[30px]">
+            <div class=" md:grid-cols-3 flex justify-center gap-[30px] mt-[30px] grid-cols-1 flex-wrap md:flex-nowrap">
                 <div class="bg-[pink] w-[329px] h-[480px]">
                     <img src="./unsplash_S6OSYUlvJxo.png" class="w-[300px] h-[256px] mt-[16px] ml-[15px] " alt="...">
                     <h1 class="w-[157px] text-[28px] mt-[16px] ml-[15px]">Light Setup</h1>
@@ -151,7 +180,7 @@
 
 
             </div>
-            <div class=" grid-cols-3 flex justify-center gap-[30px] mt-[30px]">
+            <div class=" md:grid-cols-3 flex justify-center gap-[30px] mt-[30px] grid-cols-1 flex-wrap md:flex-nowrap">
                 <div class="bg-[pink] w-[329px] h-[480px]">
                     <img src="./unsplash_J4hxSsDZ8Lc.png" class="w-[300px] h-[256px] mt-[16px] ml-[15px] " alt="...">
                     <h1 class="w-[190px] text-[28px] mt-[16px] ml-[15px]">Green Screen</h1>
@@ -193,8 +222,10 @@
 
             </div>
             <div class="flex ">
-            <h2 class="w-[99px] text-[18px] h-[24px] text-[#E02C6D]  mt-[40px] font-semibold ml-[1184px]">See More</h2>
-            <i class="fa fa-arrow-right ml-[-14px] text-[#E02C6D] mt-[46px]"  aria-hidden="true"></i></div>
+                <h2 class="w-[99px] text-[18px] h-[24px] text-[#E02C6D]  mt-[40px] font-semibold md:ml-[1184px]">See
+                    More</h2>
+                <i class="fa fa-arrow-right ml-[-14px] text-[#E02C6D] mt-[46px]" aria-hidden="true"></i>
+            </div>
 
 
         </section>
@@ -210,19 +241,20 @@
                     aliqua dolor do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                 </p>
-            <div class="flex">
-                <div cl> <button class="bg-[#E02C6D] text-[#ffff] rounded-none  ... w-[186px] font-semibold
+                <div class="flex">
+                    <div> <button class="bg-[#E02C6D] text-[#ffff] rounded-none  ... w-[186px] font-semibold
                                  h-[44px] mt-[30px]  ">
-                       Just now
-            
-                    </button></div>
-                <div class="mt-[42px] text-[#ffff] ml-[-60px] w-[24px] h-[24px]"><img src="./arrow-forward 1.svg" alt="...">
+                            Just now
+
+                        </button></div>
+                    <div class="mt-[42px] text-[#ffff] ml-[-60px] w-[24px] h-[24px]"><img src="./arrow-forward 1.svg"
+                            alt="...">
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
         <!-- footer -->
-        <footer class="bg-[#E02C6D] h-[200px]  mt-[100px] text-[#ffff] flex flex-col items-center">
+        <footer class="bg-[#E02C6D] md:h-[200px]  mt-[100px] text-[#ffff] flex flex-col items-center">
             <h1 class="w-[243px] text-[24px] font-bold leading-[36px] mt-[50px]">Influencer products</h1>
             <p class="w-[262px] text-[14px]">Copyright © 2020 influencer products</p>
             <p class="w-[124px] text-[14px]">All rights reserved</p>
